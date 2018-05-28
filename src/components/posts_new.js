@@ -39,7 +39,7 @@ class PostsNew extends Component {
                 />
                 <Field
                     label="Tags"
-                    name="tags"
+                    name="categories"
                     component={this.renderField}
                 />
                 <Field
@@ -61,8 +61,8 @@ function validate(values) {
         errors.title = "Enter a title!";
     }
 
-    if (!values.tags) {
-        errors.tags = "Enter at least one tag!";
+    if (!values.categories) {
+        errors.categories = "Enter at least one tag!";
     }
 
     if (!values.content) {
